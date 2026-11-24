@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>O Barbeirin — Barbearia em Serra Talhada e Triunfo (PE) desde 2019</title>
+<meta name="description" content="O Barbeirin: barbearia desde 2019 em Serra Talhada e Triunfo (PE). Cortes, degradê, barba, combos e planos mensais. Agende pelo WhatsApp.">
+<meta property="og:title" content="O Barbeirin — Barbearia desde 2019">
+<meta property="og:description" content="Seu estilo. Sua identidade. Seu barbeiro. Agende pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="O Barbeirin">
+<meta property="og:image" content="/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="O Barbeirin — Barbearia desde 2019 em Serra Talhada e Triunfo (PE)">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="O Barbeirin — Barbearia desde 2019">
+<meta name="twitter:description" content="Seu estilo. Sua identidade. Seu barbeiro. Agende pelo WhatsApp.">
+<meta name="twitter:image" content="/assets/img/og-image.png">
+<meta name="theme-color" content="#050505">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/img/hero-poster.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--fg:#fff;--red:#E32636;--blue:#1646A0;--surface:#171717;--muted:#B8B8B8;--line:#2a2a2a;
+--hd:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--bd:"Barlow",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1.0625rem/1.65 var(--bd);overflow-x:hidden}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--fg);outline-offset:3px}
+.wrap{width:min(1200px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(4rem,9vw,7.5rem) 0}
+h1,h2,h3{font-family:var(--hd);text-transform:uppercase;line-height:1;margin:0;letter-spacing:.01em}
+h1{font-size:clamp(2.4rem,9vw,6.4rem)}
+h2{font-size:clamp(2.2rem,5.5vw,4rem);margin-bottom:1.25rem}
+h3{font-size:1.5rem}
+.eyebrow{display:inline-block;font:700 .85rem var(--hd);letter-spacing:.25em;text-transform:uppercase;color:var(--fg);border:1px solid var(--blue);padding:.35rem .8rem;margin-bottom:1.25rem}
+.lead,.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.8rem 1.6rem;font:700 1.05rem var(--hd);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:2px solid var(--red);background:var(--red);color:#fff;border-radius:2px;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px);background:#c71f2e;border-color:#c71f2e}
+.btn.ghost{background:transparent;border-color:var(--fg)}
+.btn.ghost:hover{background:var(--fg);color:#000;border-color:var(--fg)}
+.btn.sm{min-height:44px;padding:.5rem 1rem;font-size:.95rem}
+header{position:fixed;inset:0 0 auto;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.solid{background:rgba(5,5,5,.94);border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.brand b{font:700 1.7rem var(--hd);letter-spacing:.08em}
+.brand small{font:500 .7rem var(--hd);letter-spacing:.3em;color:var(--muted)}
+.brand img{height:60px;width:auto;}
+.menu{display:flex;align-items:center;gap:clamp(1rem,1.7vw,2rem);list-style:none;margin:0;padding:0}
+.menu a:not(.btn){text-decoration:none;font:500 1rem var(--hd);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+.menu a:not(.btn):hover{color:var(--fg)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--fg);width:48px;height:48px;cursor:pointer;font:700 1.4rem var(--hd)}
+@media(max-width:1080px){
+.burger{display:block}
+.menu{position:fixed;inset:calc(76px + env(safe-area-inset-top,0px)) 0 0 0;background:var(--bg);flex-direction:column;justify-content:center;gap:1.6rem;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s,transform .25s,visibility .25s}
+.menu.open{opacity:1;visibility:visible;transform:none}
+.menu a:not(.btn){font-size:1.6rem}}
+.hero{min-height:100svh;display:flex;align-items:center;padding:7rem 0 5rem;background:radial-gradient(900px 500px at 85% 30%,rgba(22,70,160,.28),transparent 70%),var(--bg);position:relative}
+.hero .wrap{display:block;text-align:left}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero h1 span{display:block}
+.hero p{max-width:34ch;font-size:1.2rem;margin:1.5rem 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:1rem}
+.hero-logo{width:min(440px,100%);height:auto;margin-inline:auto;}
+.hero{overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:0;background:#0b0b0b}
+.hero-media video{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,5,.9) 0%,rgba(5,5,5,.68) 55%,rgba(5,5,5,.82) 100%),linear-gradient(180deg,rgba(5,5,5,.6) 0%,transparent 28%,transparent 60%,var(--bg) 100%)}
+.hero .wrap{position:relative;z-index:1}.scroll{z-index:1}
+@media(max-width:900px){.hero-media::after{background:linear-gradient(180deg,rgba(5,5,5,.72),rgba(5,5,5,.8) 60%,var(--bg))}}
+.pole{aspect-ratio:1/2.2;max-height:70vh;margin-inline:auto;width:min(150px,100%);border:2px solid var(--line);border-radius:80px;background:repeating-linear-gradient(135deg,var(--red) 0 22px,#fff 22px 44px,var(--blue) 44px 66px,#fff 66px 88px);opacity:.9}
+.scroll{position:absolute;bottom:1.5rem;left:50%;translate:-50% 0;font:500 .75rem var(--hd);letter-spacing:.3em;color:var(--muted);text-decoration:none}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero-logo{display:none}.hero{padding-top:6.5rem}}
+.bar{border-block:1px solid var(--line);background:var(--surface);padding:2rem 0}
+.bar ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
+.bar li{display:flex;gap:.9rem;align-items:center;font:500 1.15rem var(--hd);letter-spacing:.1em;text-transform:uppercase}
+.bar svg{width:28px;height:28px;flex:none;stroke:var(--red);fill:none;stroke-width:1.8}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.ph{background:linear-gradient(160deg,#1d1d1d,#0c0c0c);border:1px solid var(--line);display:flex;align-items:flex-end;padding:1rem;position:relative;min-height:200px}
+.ph span{font:500 .75rem var(--hd);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);padding:.2rem .5rem}
+.about .photo{aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.photo img{display:block;width:100%;height:100%;object-fit:cover}
+.since{font:700 clamp(3rem,8vw,5rem) var(--hd);color:var(--blue);line-height:1;margin:1.5rem 0}
+@media(max-width:800px){.about .wrap{grid-template-columns:1fr}}
+.svc{background:var(--surface)}
+.list{list-style:none;margin:2rem 0 0;padding:0;border-top:1px solid var(--line)}
+.list li{display:grid;grid-template-columns:1fr auto auto;gap:1rem 1.5rem;align-items:center;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+.list p{margin:.25rem 0 0;font-size:.98rem}
+.price{font:700 1.5rem var(--hd);white-space:nowrap}
+.price.tbd{font-size:1rem;color:var(--muted);letter-spacing:.1em}
+.dur{display:block;font-size:.85rem;color:var(--muted);font-family:var(--bd);font-weight:400;text-align:right}
+@media(max-width:640px){.list li{grid-template-columns:1fr auto}.list .btn{grid-column:1/-1}}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:2rem}
+.tile{position:relative;margin:0;aspect-ratio:1/1;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
+.tile img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.tile:hover img{transform:scale(1.04)}
+.tile figcaption{position:absolute;inset:auto 0 0 0;padding:2rem .9rem .8rem;font:500 .85rem var(--hd);letter-spacing:.2em;text-transform:uppercase;background:linear-gradient(transparent,rgba(5,5,5,.85))}
+@media(max-width:700px){.grid{grid-template-columns:1fr 1fr;gap:.5rem}}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-top:2rem}
+.card{background:var(--surface);border:1px solid var(--line);padding:1.5rem}
+.empty{border:1px dashed var(--line);padding:2rem;color:var(--muted);margin-top:2rem}
+.rev{margin:0}.rev blockquote{margin:.75rem 0 1rem;font-size:1rem}.rev .stars{color:var(--red);letter-spacing:.15em;font-size:1.2rem}.rev figcaption{font-size:.9rem}
+.loc{background:var(--surface)}
+.loc .wrap{display:block}
+.loc dl{margin:0}.loc dt{font:700 1rem var(--hd);letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-top:1.4rem}
+.loc dd{margin:.2rem 0 0}
+@media(max-width:800px){.loc .wrap{grid-template-columns:1fr}}
+.final{text-align:center;background:radial-gradient(700px 300px at 50% 100%,rgba(227,38,54,.22),transparent 70%),var(--bg)}
+.final p{max-width:44ch;margin:0 auto 2rem}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.75rem}
+.tab{min-height:44px;padding:.5rem 1.1rem;background:transparent;color:var(--muted);border:1px solid var(--line);font:500 1rem var(--hd);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}
+.tab:hover{color:var(--fg);border-color:var(--muted)}
+.tab[aria-pressed=true]{background:var(--fg);color:#000;border-color:var(--fg)}
+.badge{display:inline-block;margin-top:.45rem;font:500 .75rem var(--hd);letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--blue);padding:.1rem .5rem}
+.sub{margin-top:4.5rem;font-size:clamp(1.8rem,4vw,2.6rem)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:1.25rem;margin-top:1.5rem}
+.plan{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;gap:.5rem;padding:2rem 1.75rem 1.75rem 2.4rem;background:#0a0a0a;border:1px solid var(--line)}
+.plan .stripe{position:absolute;inset:0 auto 0 0;width:10px;background:repeating-linear-gradient(135deg,var(--c1) 0 10px,#fff 10px 20px,var(--c2) 20px 30px,#fff 30px 40px)}
+.plan .wm{position:absolute;right:1rem;top:1rem;height:120px;width:auto;fill:none;stroke:currentColor;stroke-width:2;opacity:.14;pointer-events:none}
+.kicker{font:500 .8rem var(--hd);letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin:0}
+.plan h3{font-size:2.3rem}
+.psub{margin:0;font:500 1.05rem var(--hd);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.pp{font:700 3rem var(--hd);line-height:1;margin-top:.75rem}.pp small{font:500 1rem var(--hd);color:var(--muted);margin-left:.3rem}
+.chips{list-style:none;margin:.25rem 0 1rem;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+.chips li{font:500 .8rem var(--hd);letter-spacing:.14em;text-transform:uppercase;border:1px solid currentColor;padding:.15rem .6rem}
+.plan .btn{margin-top:auto}
+.plan.basic{--c1:#1646A0;--c2:#B8B8B8;border-color:#3a3a3a;background:linear-gradient(160deg,#141414,#0a0a0a);color:#d6d6d6}
+.plan.basic .wm{color:var(--c2)}
+.plan.plus{--c1:#E32636;--c2:#E32636;border-color:rgba(227,38,54,.55);background:linear-gradient(160deg,rgba(227,38,54,.16),#0a0a0a 62%)}
+.plan.plus .wm{color:var(--red)}
+.plan.plus .pp{border-bottom:3px solid var(--red);padding-bottom:.45rem}
+.plan.plus .btn.ghost{border-color:var(--red)}
+.plan.vip{padding-left:1.75rem;border:3px solid transparent;background:linear-gradient(#0b0b0b,#0b0b0b) padding-box,repeating-linear-gradient(135deg,#E32636 0 14px,#fff 14px 28px,#1646A0 28px 42px,#fff 42px 56px) border-box;box-shadow:0 0 44px rgba(22,70,160,.28)}
+.plan.vip .stripe{display:none}
+.plan.vip .wm{top:auto;bottom:1rem;color:#fff;opacity:.1}
+.plan.vip .pp{background:linear-gradient(180deg,#fff,#B8B8B8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.plan.vip .pp small{-webkit-text-fill-color:var(--muted)}
+.plan.vip::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.07) 50%,transparent 65%);transform:translateX(-100%);animation:sheen 5s ease-in-out infinite;pointer-events:none}
+@keyframes sheen{to{transform:translateX(100%)}}
+.ribbon{position:absolute;top:1.1rem;right:-2.4rem;transform:rotate(40deg);background:var(--red);color:#fff;font:700 .85rem var(--hd);letter-spacing:.3em;padding:.25rem 2.6rem}
+.units{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1.25rem;margin-top:2rem}
+.btns{display:flex;gap:.6rem;margin-top:1.5rem}
+.btns .btn{flex:1 1 auto;padding:.5rem .5rem;letter-spacing:.08em;white-space:nowrap}
+@media(max-width:480px){.btns{flex-wrap:wrap}.btns .btn{flex:1 1 100%}}
+.unit{background:var(--bg);border:1px solid var(--line);padding:1.75rem}
+dialog{background:var(--surface);color:var(--fg);border:1px solid var(--line);padding:1.75rem;width:min(420px,calc(100% - 2rem))}
+dialog:not(:modal)[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:100}
+dialog::backdrop{background:rgba(0,0,0,.75)}
+#pickList{display:grid;gap:.75rem;margin:1.25rem 0}
+footer{border-top:1px solid var(--line);padding:4rem 0 2rem;font-size:.95rem;background:#0a0a0a}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1.3fr 1fr;gap:2.5rem}
+.fbrand img{width:200px;height:auto;display:block;margin-bottom:1rem}
+footer h3{font-size:1.15rem;letter-spacing:.2em;color:var(--red);margin-bottom:1rem}
+.flist{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+footer a:not(.btn){text-decoration:none;color:var(--muted)}footer a:not(.btn):hover{color:var(--fg);text-decoration:underline}
+footer p{margin:0 0 1rem}
+.soc{display:flex;flex-wrap:wrap;gap:.6rem}
+footer .soc a{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--line);color:var(--muted);transition:background .2s,color .2s,border-color .2s}
+footer .soc a:hover{color:#fff;background:var(--red);border-color:var(--red);text-decoration:none}
+footer .soc a.lbl{width:auto;padding:0 1rem;gap:.55rem;grid-auto-flow:column;font:500 .85rem var(--hd);letter-spacing:.14em;text-transform:uppercase}
+.soc svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fbar{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color:var(--muted);font-size:.85rem}.fbar p{margin:0}
+@media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.fgrid{grid-template-columns:1fr}}
+.fab{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:40;display:none;box-shadow:0 6px 24px rgba(0,0,0,.6)}
+@media(max-width:900px){.fab{display:inline-flex}body{padding-bottom:70px}}
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+
+.team{margin-top:2rem}
+.thead{border-bottom:1px solid var(--line);padding:.9rem 0;margin-bottom:1.5rem}
+.thead h3{font-size:1.9rem;border-left:4px solid var(--red);padding-left:.8rem}
+.thead small{font-size:.95rem;color:var(--muted)}
+.pro h4{margin:0;font:700 1.5rem var(--hd);text-transform:uppercase;line-height:1}
+.pro{display:flex;flex-direction:column;gap:.35rem;align-items:flex-start}
+.pph{position:relative;width:100%;aspect-ratio:4/5;overflow:hidden;background:linear-gradient(160deg,#1d1d1d,#0c0c0c);border:1px solid var(--line);display:grid;place-items:center;margin-bottom:.75rem}
+.pph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.pph .pi{height:46%;width:auto;fill:none;stroke:#333;stroke-width:2}
+.ex{position:absolute;top:.75rem;left:.75rem;z-index:1;background:var(--red);color:#fff;font:700 .75rem var(--hd);letter-spacing:.2em;text-transform:uppercase;padding:.15rem .6rem}
+.team .notice{margin:0 0 2rem;color:var(--muted);border:1px dashed var(--line);padding:.8rem 1rem;font-size:.95rem}
+.btn:disabled{opacity:.45;cursor:not-allowed}.btn:disabled:hover{transform:none;background:var(--red)}
+.pro:hover .pph img{transform:scale(1.04)}
+.role{margin:0;font:500 1rem var(--hd);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.pro p.muted{margin:.25rem 0 .75rem;font-size:.98rem}
+.pro .btn{margin-top:auto}
+.team .empty{margin:0}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;align-items:start;margin-top:2rem}
+.fcol{border-top:1px solid var(--line)}
+@media(max-width:800px){.faq{grid-template-columns:1fr}.fcol+.fcol{border-top:0}}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.2rem 0;min-height:48px;font:700 1.35rem var(--hd);letter-spacing:.04em;text-transform:uppercase}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:500 1.9rem var(--hd);color:var(--red);transition:transform .3s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 1.4rem;color:var(--muted);max-width:68ch}
+/* ===== efeitos ===== */
+@keyframes up{from{opacity:0;transform:translateY(24px)}}
+@keyframes bob{50%{transform:translateY(6px)}}
+@keyframes slide{to{transform:translateX(-79.2px)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(227,38,54,.55)}70%,100%{box-shadow:0 0 0 18px rgba(227,38,54,0)}}
+#prog{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left}
+.hero .eyebrow{animation:up .7s both}
+.hero h1 span{animation:up .8s both}
+.hero h1 span:nth-child(1){animation-delay:.1s}.hero h1 span:nth-child(2){animation-delay:.22s}.hero h1 span:nth-child(3){animation-delay:.34s}
+.hero p.lead{animation:up .8s .5s both}
+.hero .cta{animation:up .8s .65s both}
+.scroll{animation:bob 1.8s ease-in-out infinite}
+.btn{position:relative;overflow:hidden}
+.btn.fab{position:fixed}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.3) 50%,transparent 70%);transform:translateX(-120%);pointer-events:none}
+.btn:hover::after{transform:translateX(120%);transition:transform .7s}
+.final .btn{animation:pulse 2.4s infinite}
+.poleline{height:8px;overflow:hidden}
+.poleline::before{content:"";display:block;width:calc(100% + 80px);height:100%;background:repeating-linear-gradient(135deg,#E32636 0 14px,#fff 14px 28px,#1646A0 28px 42px,#fff 42px 56px);animation:slide 3s linear infinite}
+.rv h2::after{content:"";display:block;width:64px;height:4px;margin-top:1rem;background:linear-gradient(90deg,var(--red),var(--blue));transition:transform .8s .25s;transform-origin:left}
+.js .rv h2::after{transform:scaleX(0)}.js .rv.in h2::after{transform:scaleX(1)}
+.final h2::after{margin-inline:auto;transform-origin:center}
+.js .st>*{opacity:0;translate:0 18px;transition:opacity .6s calc(var(--i,0)*90ms),translate .6s calc(var(--i,0)*90ms),transform .3s,border-color .3s,box-shadow .3s,padding .3s}
+.js .st.in>*{opacity:1;translate:none}
+#services li{animation:up .45s both}
+#services li:nth-child(2){animation-delay:.07s}#services li:nth-child(3){animation-delay:.14s}#services li:nth-child(4){animation-delay:.21s}#services li:nth-child(5){animation-delay:.28s}#services li:nth-child(6){animation-delay:.35s}
+.js .photo img{transform:scale(1.15);transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.js .photo.in img{transform:none}
+.list li{position:relative;padding-left:0;transition:padding .3s}
+.list li::before{content:"";position:absolute;left:0;top:1rem;bottom:1rem;width:3px;background:var(--red);transform:scaleY(0);transition:transform .3s}
+.plan,.unit,.rev{transition:transform .3s,border-color .3s,box-shadow .3s}
+@media(hover:hover){
+.list li:hover{padding-left:1.1rem}.list li:hover::before{transform:scaleY(1)}
+.plan:hover,.unit:hover,.rev:hover{transform:translateY(-6px)}
+.unit:hover,.rev:hover{border-color:#555;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.plan.basic:hover{box-shadow:0 14px 30px rgba(22,70,160,.25)}.plan.plus:hover{box-shadow:0 14px 30px rgba(227,38,54,.25)}}
+
+/* ===== equipe moderna ===== */
+#teamTabs{display:inline-flex;gap:0;border:1px solid var(--line);padding:4px;margin-top:1.5rem}
+#teamTabs .tab{border:0;min-height:42px}
+.thead{border:0;padding:1rem 0 1.5rem;margin:0}
+.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.tgrid .pro{animation:up .6s calc(var(--i,0)*80ms) both}
+.pro{position:relative}
+.pph{margin:0;aspect-ratio:4/5;border-color:#262626}
+.pph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%;transition:filter .5s,transform .7s cubic-bezier(.2,.7,.2,1)}
+.pph::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;z-index:2;background:repeating-linear-gradient(135deg,#E32636 0 8px,#fff 8px 16px,#1646A0 16px 24px,#fff 24px 32px);transform:scaleY(0);transform-origin:bottom;transition:transform .5s}
+.pph::after{content:"";position:absolute;inset:0;background:radial-gradient(220px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.16),transparent 65%);opacity:0;transition:opacity .3s;pointer-events:none}
+.pinfo{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:3.5rem 1rem 1rem;background:linear-gradient(transparent,rgba(5,5,5,.92) 70%);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.pinfo h4{font-size:1.7rem;margin:0}
+.pinfo .role{margin-top:.3rem;font-size:.8rem}
+.pro .btn{position:absolute;z-index:2;left:1rem;right:1rem;bottom:1rem;margin:0;transform:translateY(160%);opacity:0;transition:transform .4s cubic-bezier(.2,.7,.2,1),opacity .3s}
+.pro:focus-within .pinfo{transform:translateY(-3.5rem)}
+.pro:focus-within .btn{transform:none;opacity:1}
+.pro:focus-within .pph::before{transform:scaleY(1)}
+@media(hover:hover){
+.pph img{filter:grayscale(.85) contrast(1.05)}
+.pro:hover .pph img{filter:none;transform:scale(1.07)}
+.pro:hover .pinfo{transform:translateY(-3.5rem)}
+.pro:hover .btn{transform:none;opacity:1}
+.pro:hover .pph::before{transform:scaleY(1)}
+.pro:hover .pph::after{opacity:1}}
+@media(hover:none){
+.pro .btn{transform:none;opacity:1;left:.7rem;right:.7rem;bottom:.7rem}
+.pinfo{padding-bottom:4.2rem}
+.pph::before{transform:scaleY(1)}}
+@media(max-width:900px){.tgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.tgrid{grid-template-columns:repeat(2,1fr);gap:.7rem}.pinfo h4{font-size:1.3rem}.pinfo{padding:2.5rem .7rem .7rem}.pro .btn{left:.6rem;right:.6rem;bottom:.6rem}}
+
+/* ===== agendamento online ===== */
+#book{width:min(980px,calc(100% - 1rem));max-height:94vh;overflow:auto;padding:0}
+.bk-top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem 1.5rem;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--surface);z-index:3}
+.bk-top h3{font-size:1.9rem}.bk-top .kicker{color:var(--red)}
+.bk-x{width:44px;height:44px;background:transparent;border:1px solid var(--line);color:var(--fg);font-size:1.1rem;cursor:pointer}
+.bk-x:hover{border-color:var(--fg)}
+.demo-b{margin:0;border:1px dashed var(--red);padding:.6rem 1.5rem;font-size:.9rem;color:var(--muted)}
+.bk-body{display:grid;grid-template-columns:minmax(0,1fr) 300px}
+.bk-main{padding:1.5rem;display:grid;gap:1.9rem;min-width:0}
+.bk-step{padding:0;min-width:0}
+.bk-step h4{display:flex;align-items:center;gap:.6rem;font:700 1rem var(--hd);letter-spacing:.18em;text-transform:uppercase;margin:0 0 .8rem}
+.bk-step h4 i{font-style:normal;display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--red);color:#fff;font-size:.85rem;letter-spacing:0}
+.cnt{margin-left:auto;font:500 .8rem var(--bd);letter-spacing:0;text-transform:none;color:var(--muted)}
+.chips2{display:flex;flex-wrap:wrap;gap:.5rem}
+.opt{min-height:44px;padding:.45rem .9rem;background:transparent;color:var(--fg);border:1px solid var(--line);font:500 .95rem var(--bd);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.opt:hover{border-color:var(--muted)}
+.opt[aria-pressed=true]{background:var(--fg);color:#000;border-color:var(--fg)}
+.seg{display:inline-flex;border:1px solid var(--line);padding:4px}.seg .opt{border:0}
+.svcs{display:grid;gap:.4rem;margin-top:.8rem}
+.svc-r{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.7rem 1rem;border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer;text-align:left;font:500 1rem var(--bd);position:relative;transition:border-color .2s,background .2s}
+.svc-r small{display:block;color:var(--muted);font-size:.8rem}
+.svc-r b{font:700 1.15rem var(--hd);white-space:nowrap}
+.svc-r:hover{border-color:var(--muted)}
+.svc-r[aria-pressed=true]{border-color:var(--fg);background:rgba(255,255,255,.06)}
+.svc-r[aria-pressed=true]::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red)}
+.av{width:56px;height:56px;border-radius:50%;overflow:hidden;background:#1d1d1d;border:2px solid var(--line);display:grid;place-items:center;flex:none;transition:border-color .2s}
+.av.lg{width:64px;height:64px}
+.av img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block}
+.av svg{height:58%;width:auto;fill:none;stroke:#555;stroke-width:2}
+.pros{display:grid;grid-template-columns:repeat(auto-fill,minmax(94px,1fr));gap:.6rem}
+.pro-c{display:grid;justify-items:center;align-content:start;gap:.35rem;padding:.9rem .4rem;background:transparent;border:1px solid var(--line);color:var(--fg);cursor:pointer;text-align:center;font:inherit;transition:border-color .2s,background .2s,transform .2s}
+.pro-c b{font:700 1.05rem var(--hd);letter-spacing:.06em;text-transform:uppercase}
+.pro-c small{color:var(--muted);font-size:.75rem;line-height:1.2}
+.pro-c:hover{border-color:var(--muted);transform:translateY(-2px)}.pro-c:hover .av{border-color:var(--muted)}
+.pro-c[aria-pressed=true]{border-color:var(--red);background:rgba(227,38,54,.1)}.pro-c[aria-pressed=true] .av{border-color:var(--red)}
+.days{display:flex;gap:.5rem;overflow-x:auto;padding-bottom:.5rem}
+.day{flex:none;width:64px;display:grid;justify-items:center;padding:.55rem 0;border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer;line-height:1.1;transition:background .2s,color .2s}
+.day small{text-transform:uppercase;font-size:.68rem;letter-spacing:.12em;color:var(--muted)}
+.day b{font:700 1.6rem var(--hd)}
+.day:hover{border-color:var(--muted)}
+.day[aria-pressed=true]{background:var(--fg);color:#000;border-color:var(--fg)}.day[aria-pressed=true] small{color:#333}
+#bkL h5{margin:.2rem 0 .5rem;font:500 .85rem var(--hd);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:.45rem;margin-bottom:.9rem}
+.slot{min-height:42px;border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer;font:600 .95rem var(--bd);transition:background .2s,color .2s}
+.slot:hover:not(:disabled){border-color:var(--fg)}
+.slot[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
+.slot:disabled{opacity:.3;text-decoration:line-through;border-style:dashed;cursor:not-allowed}
+.leg{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--muted);margin:.2rem 0 0}
+.lg{width:14px;height:14px;border:1px solid var(--fg)}.lg.busy{border-style:dashed;opacity:.4;margin-left:.8rem}
+.bk-f{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+#book label{display:grid;gap:.3rem;font-size:.9rem;color:var(--muted)}
+#book input{width:100%;min-height:46px;background:#0b0b0b;color:var(--fg);border:1px solid var(--line);padding:.5rem .8rem;font:inherit}
+.bk-sum{border-left:1px solid var(--line);padding:1.5rem;background:#0f0f0f;position:sticky;top:75px;align-self:start;display:grid;gap:.9rem}
+.sum-pro{display:flex;align-items:center;gap:.9rem}
+.sum-pro b{display:block;font:700 1.4rem var(--hd);text-transform:uppercase;line-height:1}.sum-pro small{color:var(--muted)}
+.sum-l{display:grid;gap:.6rem;margin:0}.sum-l dt{font:500 .75rem var(--hd);letter-spacing:.2em;text-transform:uppercase;color:var(--red)}.sum-l dd{margin:0}
+#bkM{margin:0;min-height:1.3em;font-size:.9rem;color:#ff8a93}
+.bk-sum .btn{width:100%}
+.done{padding:2.5rem 1.5rem;display:grid;gap:1.1rem;justify-items:center;text-align:center}
+.done .ok{width:72px;height:72px;fill:none;stroke:var(--red);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.done>*{max-width:420px}
+@media(max-width:820px){
+.bk-body{grid-template-columns:1fr}
+.bk-sum{position:sticky;bottom:0;top:auto;border-left:0;border-top:1px solid var(--line);padding:.8rem 1rem;grid-template-columns:1fr auto;grid-template-areas:"sum btn" "msg msg";align-items:center;gap:.4rem .8rem;z-index:2}
+#bkSum{grid-area:sum}.bk-sum .btn{grid-area:btn;width:auto}#bkM{grid-area:msg;min-height:0}
+.bk-sum .btn{min-width:138px;padding:.5rem .6rem;letter-spacing:.06em;font-size:.95rem;line-height:1.15}
+.sum-pro .av{width:44px;height:44px}.sum-pro b{font-size:1.15rem}
+.sum-l{grid-template-columns:1fr 1fr;gap:.3rem .8rem;margin-top:.4rem}.sum-l div:nth-child(1),.sum-l div:nth-child(4){display:none}
+.bk-f{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header id="top"><span id="prog" aria-hidden="true"></span><div class="wrap nav">
+<a class="brand" href="#inicio" id="brand" aria-label="O Barbeirin — início"></a>
+<button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
+<ul class="menu" id="menu">
+<li><a href="#inicio">Início</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre nós</a></li>
+<li><a href="#galeria">Galeria</a></li><li><a href="#equipe">Equipe</a></li><li><a href="#avaliacoes">Avaliações</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="#contato">Contato</a></li>
+<li><a class="btn sm" data-wa href="#">Agendar horário</a></li>
+</ul></div></header>
+
+<main id="inicio">
+<section class="hero"><div class="hero-media" aria-hidden="true"><video id="heroVideo" muted loop playsinline preload="metadata" poster="assets/img/hero-poster.jpg"></video></div><div class="wrap">
+<div><span class="eyebrow">Desde 2019</span>
+<h1><span>Seu estilo.</span><span>Sua identidade.</span><span><em>Seu barbeiro.</em></span></h1>
+<p class="lead">Mais do que um corte, uma experiência feita para valorizar seu estilo.</p>
+<div class="cta"><a class="btn" data-wa href="#">Agendar meu horário</a><a class="btn ghost" href="#servicos">Conhecer serviços</a></div></div>
+
+</div><a class="scroll" href="#sobre" aria-label="Rolar para baixo">ROLE ↓</a></section>
+
+<div class="bar"><div class="wrap"><ul>
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Atendimento personalizado</li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M5 19L19 5"/><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/></svg>Profissionais especializados</li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16v6H4zM6 12V7h12v5"/></svg>Ambiente confortável</li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>Cuidado com cada detalhe</li>
+</ul></div></div>
+
+<div class="poleline" aria-hidden="true"></div>
+<section class="about" id="sobre"><div class="wrap">
+<div class="photo rv"><img src="assets/img/about.webp" alt="Homem de terno azul sorrindo, de braços cruzados, no salão da O Barbeirin" width="900" height="1125" loading="lazy" decoding="async"></div>
+<div class="rv"><h2>Tradição no cuidado. Atitude no estilo.</h2>
+<p class="lead">A O Barbeirin nasceu para quem valoriza um bom corte, atendimento de qualidade e atenção aos detalhes. Desde 2019, a proposta da marca é unir estilo, personalidade e cuidado em cada atendimento.</p>
+<div class="since" aria-hidden="true">Desde 2019</div>
+<a class="btn ghost" href="#servicos">Conheça nossos serviços</a></div>
+</div></section>
+
+<section class="svc" id="servicos"><div class="wrap rv">
+<h2>Seu próximo visual começa aqui.</h2>
+<p class="muted">Escolha a categoria. Nos serviços com preço “Consultar”, a equipe informa o valor pelo WhatsApp.</p>
+<div class="tabs" id="tabs" role="group" aria-label="Categorias de serviços"></div>
+<ul class="list" id="services"></ul>
+<h3 class="sub" id="planos">Planos mensais</h3>
+<p class="muted">Assinaturas para quem quer manter o visual em dia. Fale com a equipe para conhecer os detalhes.</p>
+<div class="plans" id="plans"></div></div></section>
+
+<section id="galeria"><div class="wrap rv">
+<h2>Cada corte tem a sua assinatura.</h2>
+<div class="grid" id="gallery"></div></div></section>
+
+<section id="equipe"><div class="wrap rv"><h2>Nossos profissionais</h2><p class="muted">Escolha a unidade e conheça quem cuida do seu visual. Agende direto com o barbeiro que preferir.</p><div class="tabs" id="teamTabs" role="group" aria-label="Escolha a unidade"></div><div class="team" id="team"></div></div></section>
+
+<section id="avaliacoes"><div class="wrap rv"><h2>O que dizem os clientes</h2><div id="reviews"></div></div></section>
+
+<section id="duvidas"><div class="wrap rv"><h2>Perguntas frequentes</h2><div class="faq" id="faq"></div></div></section>
+<section class="loc" id="contato"><div class="wrap rv">
+<h2>Onde estamos</h2>
+<p class="muted">Duas unidades para te atender. Escolha a mais próxima.</p>
+<div class="units" id="units"></div></div></section>
+
+<section class="final"><div class="wrap rv">
+<h2>Seu próximo corte está a um clique.</h2>
+<p class="lead">Escolha seu serviço e fale com a nossa equipe para encontrar o melhor horário.</p>
+<a class="btn" data-wa href="#">Agendar pelo WhatsApp</a></div></section>
+</main>
+
+<div class="poleline" aria-hidden="true"></div>
+<footer><div class="wrap">
+<div class="fgrid">
+<div class="fbrand"><img id="fLogo" alt="O Barbeirin — desde 2019" width="800" height="444"><p class="muted">Barbearia desde 2019. Estilo, personalidade e cuidado em cada atendimento, em Serra Talhada e Triunfo.</p><div id="fSocial"></div></div>
+<nav aria-label="Navegação do rodapé"><h3>Navegação</h3><ul class="flist"><li><a href="#inicio">Início</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#planos">Planos mensais</a></li><li><a href="#sobre">Sobre nós</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#equipe">Equipe</a></li><li><a href="#avaliacoes">Avaliações</a></li><li><a href="#duvidas">Perguntas frequentes</a></li><li><a href="#contato">Contato</a></li></ul></nav>
+<div><h3>Unidades</h3><ul class="flist" id="fUnits"></ul></div>
+<div><h3>Agendamento</h3><p class="muted">Escolha o serviço e fale com a nossa equipe pelo WhatsApp.</p><a class="btn sm" data-wa href="#">Agendar horário</a></div>
+</div>
+<div class="fbar"><p>© <span id="yr"></span> O Barbeirin. Todos os direitos reservados.</p><p>O Barbeirin — Desde 2019</p><a href="#inicio">Voltar ao topo ↑</a></div>
+</div></footer>
+
+<dialog id="pick" aria-labelledby="pickT"><h3 id="pickT">Escolha a unidade</h3><p class="muted" style="margin:.5rem 0 0">Você será direcionado ao WhatsApp da unidade.</p><div id="pickList"></div><button type="button" class="btn ghost sm" id="pickClose">Fechar</button></dialog>
+<dialog id="book" aria-labelledby="bkTitle"><form id="bkForm" novalidate>
+<header class="bk-top"><div><p class="kicker">Agendamento online</p><h3 id="bkTitle">Escolha seu horário</h3></div><button type="button" class="bk-x" id="bkX" aria-label="Fechar">✕</button></header>
+<p class="demo-b" id="bkDemo" hidden>Modo demonstração: os horários são ilustrativos e nenhuma reserva real é feita.</p>
+<div class="bk-body"><div class="bk-main">
+<section class="bk-step"><h4><i>1</i>Unidade</h4><div class="seg" id="bkU"></div></section>
+<section class="bk-step"><h4><i>2</i>Serviço</h4><div class="chips2" id="bkC"></div><div class="svcs" id="bkS"></div></section>
+<section class="bk-step"><h4><i>3</i>Profissional</h4><div class="pros" id="bkP"></div></section>
+<section class="bk-step"><h4><i>4</i>Dia</h4><div class="days" id="bkD"></div></section>
+<section class="bk-step"><h4><i>5</i>Horário<span class="cnt" id="bkCnt"></span></h4><div id="bkL" aria-live="polite"></div><p class="leg"><span class="lg"></span>Livre<span class="lg busy"></span>Ocupado</p></section>
+<section class="bk-step"><h4><i>6</i>Seus dados</h4><div class="bk-f"><label>Nome<input id="bkN" autocomplete="name"></label><label>WhatsApp com DDD<input id="bkW" type="tel" inputmode="tel" autocomplete="tel"></label></div></section>
+</div><aside class="bk-sum" aria-label="Resumo do agendamento"><div id="bkSum"></div><p id="bkM" role="alert"></p><button class="btn" type="submit" id="bkOk">Confirmar agendamento</button></aside></div>
+</form><div id="bkDone" hidden></div></dialog>
+<a class="btn fab" data-wa href="#">Agendar no WhatsApp</a>
+
+<script>
+const HERO_VIDEO="assets/video/hero.mp4";
+const TEAM_IMG=["assets/img/team/bernardo.webp","assets/img/team/eliedson.webp","assets/img/team/emenson-st.webp","assets/img/team/lucas-st.webp","assets/img/team/nayara.webp","assets/img/team/nildo.webp","assets/img/team/vinicius.webp","assets/img/team/emenson-tr.webp","assets/img/team/gabriel.webp"];
+const GALLERY_SRC=["assets/img/gallery/01-degrade.webp","assets/img/gallery/02-equipe-cliente.webp","assets/img/gallery/03-clientes-satisfeitos.webp","assets/img/gallery/04-corte-classico.webp","assets/img/gallery/05-atendimento.webp","assets/img/gallery/06-topete-barba.webp"];
+</script>
+<script>
+/* ===== CONFIGURAÇÃO ÚNICA — preencha com os dados reais ===== */
+const CONFIG={
+ name:"O Barbeirin",since:2019,
+ logoSrc:"assets/img/logo.webp",
+ social:[  // type: instagram, facebook, tiktok, youtube · city liga o perfil à unidade
+  {type:"instagram",label:"Instagram O Barbeirin Serra Talhada",short:"Serra Talhada",city:"Serra Talhada",url:"https://www.instagram.com/obarbeirin_serra_talhada/"},
+  {type:"instagram",label:"Instagram O Barbeirin Triunfo",short:"Triunfo",city:"Triunfo",url:"https://www.instagram.com/obarbeirin_triunfo/"}],
+ reviewsUrl:"https://share.google/BJzffPeDYbzjGPaZI",
+ reviews:[
+  {name:"Sertão Placas",stars:5,text:"Barbearia impecável! Atendimento excelente, ambiente diferenciado e uma equipe que sabe o que faz. Cinco estrelas é pouco. 👏"},
+  {name:"Pablo Hávila",stars:5,text:"Lugar impecável, atendimento de primeira e profissionais excelentes. Emerson nem se fala, grande profissional e parceirão. Recomendo demais!"},
+  {name:"Psicólogo Wesley Kayke",stars:5,text:"Excelente profissional! Ambiente limpo, agradável, serviço de qualidade e todos os colaboradores muito atenciosos. Indico demais."},
+  {name:"Murilo Ítalo",stars:5,text:"Agradável! Atendimento ótimo, prestatividade excelente e um trabalho muito bom!"}],            // [{name:"Nome",stars:5,text:"Texto"}] — somente avaliações reais         // link do perfil oficial de avaliações
+ units:[
+  {city:"Serra Talhada",state:"PE",street:"Av. João Kehrle, 1330",district:"IPSEP",hours:"09:00 às 20:00",open:540,close:1200,phone:"5587999468166"},
+  {city:"Triunfo",state:"PE",street:"Av. José Bezerra, 1002",district:"",hours:"09:00 às 20:00",open:540,close:1200,phone:"5587999559957"}],
+ categories:[  // price: número ou null (Consultar) · plan: true se há plano disponível
+  {name:"Cabelo",items:[{name:"Corte Simples / Social",price:null,duration:30,plan:true},{name:"Degradê na Zero",price:null,duration:45,plan:true}]},
+  {name:"Barba",items:[{name:"Barba",price:null,duration:30,plan:true},{name:"Preenchimento de Barba",price:350,duration:45}]},
+  {name:"Combos",items:[{name:"Corte Simples + Barba",price:null,duration:60,plan:true},{name:"Degradê na Zero + Barba",price:null,duration:60,plan:true},{name:"Uma máquina só + Barba",price:null,duration:45,plan:true}]},
+  {name:"Acabamento e estética",items:[{name:"Acabamento",price:15,duration:15,plan:true},{name:"Sobrancelha",price:15,duration:15},{name:"Depilação de nariz",price:20,duration:15},{name:"Lavagem",price:10,duration:15},{name:"Limpeza de pele",price:null,duration:45},{name:"Pigmentação",price:null,duration:30}]},
+  {name:"Unhas e Spa",items:[{name:"Unhas",price:null,duration:30},{name:"Combo Unhas Pé e Mão",price:null,duration:60},{name:"Spa dos pés",price:null,duration:45},{name:"Combo Spa dos pés + Mãos + Pés",price:null,duration:90}]}],
+ plans:[
+  {name:"Basic Club R. Cabelo",title:"Basic Club",sub:"R. Cabelo",chips:["Cabelo"],price:69.9,tier:"basic"},
+  {name:"Basic Club R. Cabelo+Barba",title:"Basic Club",sub:"R. Cabelo+Barba",chips:["Cabelo","Barba"],price:129.9,tier:"plus"},
+  {name:"Vip Club - Cabelo e Barba",title:"Vip Club",sub:"Cabelo e Barba",chips:["Cabelo","Barba"],price:189.9,tier:"vip"}],
+ faq:[  // use {unidades}, {categorias} e {planos} para preencher automaticamente
+  {q:"Como faço para agendar meu horário?",a:"O agendamento é feito pelo WhatsApp. Clique em “Agendar horário”, escolha a unidade e nossa equipe encontra o melhor horário com você."},
+  {q:"Onde ficam as unidades e qual é o horário de atendimento?",a:"{unidades}."},
+  {q:"Quais serviços vocês oferecem?",a:"Trabalhamos com {categorias}. A lista completa está na seção Serviços."},
+  {q:"Quanto custa cada serviço?",a:"Os valores já definidos aparecem na seção Serviços. Nos itens marcados como “Consultar”, a equipe informa o preço pelo WhatsApp."},
+  {q:"Como funcionam os planos mensais?",a:"Temos os planos: {planos}. Para conhecer os detalhes e assinar, fale com a equipe pelo WhatsApp."},
+  {q:"Onde acompanho o trabalho da barbearia?",a:"Cada unidade tem o seu Instagram: {instagrams}. Os links estão na seção Onde estamos."}],
+ booking:{mode:"demo",url:"",key:""},   // "demo" = horários ilustrativos · "api" = backend real (veja agendamento-supabase.sql)
+ defaultUnit:"Serra Talhada",   // unidade exibida primeiro na seção de profissionais
+ teamDemo:false,            // exibe equipe de EXEMPLO enquanto "team" estiver vazio; mude para false antes de publicar
+ team:[            // [{name,role,unit,bio,photo}] — unit opcional; role e bio opcionais
+  {name:"Bernardo",role:"",unit:"Serra Talhada",photo:TEAM_IMG[0]},
+  {name:"Eliedson",role:"",unit:"Serra Talhada",photo:TEAM_IMG[1]},
+  {name:"Emenson",role:"",unit:"Serra Talhada",photo:TEAM_IMG[2]},
+  {name:"Lucas",role:"",unit:"Serra Talhada",photo:TEAM_IMG[3]},
+  {name:"Nayara",role:"Manicure",unit:"Serra Talhada",photo:TEAM_IMG[4]},
+  {name:"Nildo",role:"",unit:"Serra Talhada",photo:TEAM_IMG[5]},
+  {name:"Vinicius",role:"",unit:"Serra Talhada",photo:TEAM_IMG[6]},
+  {name:"Emenson",unit:"Triunfo",photo:TEAM_IMG[7]},
+  {name:"Gabriel",unit:"Triunfo",photo:TEAM_IMG[8]},
+  {name:"Lucas",unit:"Triunfo"}],
+ gallery:[{label: "Degradê", alt: "Perfil lateral de cliente com topete, degradê e barba aparada", i: 0}, {label: "Equipe e cliente", alt: "Barbeiro e cliente sorrindo no salão da O Barbeirin", i: 1}, {label: "Clientes satisfeitos", alt: "Barbeiro e cliente fazendo sinal de positivo após o atendimento", i: 2}, {label: "Corte clássico", alt: "Jovem cliente com corte clássico e lateral baixa", i: 3}, {label: "Atendimento", alt: "Cliente com toalha no rosto durante o atendimento", i: 4}, {label: "Topete e barba", alt: "Cliente com topete volumoso e barba aparada", i: 5}]
+};
+/* ============================================================ */
+const $=s=>document.querySelector(s),esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const U=CONFIG.units,dg=p=>p.replace(/\D/g,""),fmtP=p=>{const d=dg(p);return `(${d.slice(2,4)}) ${d.slice(4,9)}-${d.slice(9)}`};
+const addr=u=>[u.street,u.district].filter(Boolean).join(", ")+` — ${u.city}, ${u.state}`;
+const waMsg=(l,mode)=>mode==="pro"?`Olá! Acessei o site da O Barbeirin e gostaria de agendar um horário com ${l}. Poderiam me informar os horários disponíveis?`:mode==="plan"?`Olá! Acessei o site da O Barbeirin e gostaria de assinar o plano ${l}. Poderiam me passar os detalhes?`:"Olá! Acessei o site da O Barbeirin e gostaria de agendar um horário"+(l?` para: ${l}`:"")+". Poderiam me informar os horários disponíveis?";
+const wa=(l,u=U[0],mode)=>`https://wa.me/${dg(u.phone)}?text=${encodeURIComponent(waMsg(l,mode))}`;
+const dlg=$("#pick"),shM=d=>d.showModal?d.showModal():d.setAttribute("open",""),clM=d=>d.close?d.close():d.removeAttribute("open");
+const openPick=(l,mode,unit)=>{const L=unit?U.filter(u=>u.city===unit):U;$("#pickList").innerHTML=(mode==="plan"?"":`<button type="button" class="btn" data-online data-svc="${esc(l)}" data-mode="${mode||""}" data-unit="${esc(unit||"")}">Agendar online no site</button><p class="muted" style="margin:.4rem 0 0">ou pelo WhatsApp:</p>`)+L.map(u=>`<a class="btn ghost" target="_blank" rel="noopener noreferrer" href="${wa(l,u,mode)}">${esc(u.city)} — ${esc(fmtP(u.phone))}</a>`).join("");shM(dlg)};
+document.addEventListener("click",e=>{const t=e.target.closest("[data-wa]");if(!t)return;e.preventDefault();e.stopImmediatePropagation();try{openPick(t.dataset.svc||"",t.dataset.mode,t.dataset.unit)}catch(x){location.hash="#contato"}},true);
+$("#pickList").addEventListener("click",e=>{const o=e.target.closest("[data-online]");clM(dlg);if(o)openBook(o.dataset.svc,o.dataset.mode,o.dataset.unit)});
+$("#pickClose").onclick=()=>clM(dlg);
+dlg.addEventListener("click",e=>{if(e.target===dlg)clM(dlg)});
+document.querySelectorAll("[data-wa]").forEach(a=>{a.href="#contato"});
+$("#brand").innerHTML=CONFIG.logoSrc?`<img src="${esc(CONFIG.logoSrc)}" alt="${CONFIG.name} — desde ${CONFIG.since}" width="108" height="60">`:`<b>O BARBEIRIN</b><small>DESDE ${CONFIG.since}</small>`;
+
+$("#yr").textContent=new Date().getFullYear();
+const brl=n=>n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+let cat=0;
+$("#tabs").innerHTML=CONFIG.categories.map((c,i)=>`<button type="button" class="tab" aria-pressed="${i===0}" data-i="${i}">${esc(c.name)}</button>`).join("");
+const renderSvc=()=>{$("#tabs").querySelectorAll(".tab").forEach((b,i)=>b.setAttribute("aria-pressed",i===cat));
+$("#services").innerHTML=CONFIG.categories[cat].items.map(s=>`<li><div><h3>${esc(s.name)}</h3>${s.plan?'<span class="badge">Plano disponível</span>':""}</div><div><span class="price ${s.price==null?"tbd":""}">${s.price==null?"CONSULTAR":brl(s.price)}</span><span class="dur">${s.duration} min</span></div><a class="btn sm" data-wa data-svc="${esc(s.name)}" href="#contato">Agendar</a></li>`).join("")};
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest(".tab");if(b){cat=+b.dataset.i;renderSvc()}});
+renderSvc();
+const pole='<svg class="wm" viewBox="0 0 40 120" aria-hidden="true"><circle cx="20" cy="8" r="7"/><rect x="8" y="16" width="24" height="90" rx="4"/><path d="M8 38l24-14M8 62l24-14M8 86l24-14M8 106l24-14"/></svg>';
+$("#plans").innerHTML=CONFIG.plans.map(p=>`<article class="plan ${p.tier}"><span class="stripe" aria-hidden="true"></span>${pole}${p.tier==="vip"?'<span class="ribbon" aria-hidden="true">VIP</span>':""}<p class="kicker">Assinatura mensal</p><h3>${esc(p.title)}</h3><p class="psub">${esc(p.sub)}</p><div class="pp">${brl(p.price)}<small>/mês</small></div><ul class="chips" aria-label="Inclui">${p.chips.map(c=>`<li>${esc(c)}</li>`).join("")}</ul><a class="btn ${p.tier==="vip"?"":"ghost"} sm" data-wa data-mode="plan" data-svc="${esc(p.name)}" href="#contato" aria-label="Quero assinar o plano ${esc(p.name)}">Quero assinar</a></article>`).join("");
+$("#gallery").innerHTML=CONFIG.gallery.map(g=>`<figure class="tile"><img src="${esc(GALLERY_SRC[g.i])}" alt="${esc(g.alt)}" width="640" height="640" loading="lazy" decoding="async"><figcaption>${esc(g.label)}</figcaption></figure>`).join("");
+const demo=!CONFIG.team.length&&CONFIG.teamDemo,bioX="Espaço para uma breve apresentação: experiência, estilo e especialidades do profissional.",TM=demo?[{name:"Barbeiro Exemplo",role:"Degradê e corte social",unit:"Serra Talhada",bio:bioX},{name:"Barbeiro Exemplo",role:"Barba e acabamento",unit:"Triunfo",bio:bioX},{name:"Barbeiro Exemplo",role:"Corte na tesoura",unit:"Serra Talhada",bio:bioX},{name:"Barbeiro Exemplo",role:"Degradê e barba",unit:"Triunfo",bio:bioX}]:CONFIG.team,
+poleI='<svg class="pi" viewBox="0 0 40 120" aria-hidden="true"><circle cx="20" cy="8" r="7"/><rect x="8" y="16" width="24" height="90" rx="4"/><path d="M8 38l24-14M8 62l24-14M8 86l24-14M8 106l24-14"/></svg>';
+const card=(t,i)=>{const u=U.find(x=>x.city===t.unit),att=`aria-label="Agendar com ${esc(t.name)}"`,b=demo?`<button type="button" class="btn sm" disabled ${att}>Agendar</button>`:`<a class="btn sm" data-wa data-mode="pro" data-svc="${esc(t.name)}" data-unit="${esc(t.unit||"")}" href="#contato" ${att}>Agendar</a>`;return `<article class="pro" style="--i:${i}"><div class="pph">${demo?'<span class="ex">Exemplo</span>':""}${t.photo?`<img src="${esc(t.photo)}" alt="Foto de ${esc(t.name)}" width="600" height="600" loading="lazy">`:poleI}<div class="pinfo"><h4>${esc(t.name)}</h4>${t.role?`<p class="role">${esc(t.role)}</p>`:""}</div>${b}</div></article>`};
+const notice='<p class="notice">Pré-visualização com dados de exemplo. Nomes, fotos e especialidades serão substituídos pelos reais.</p>';
+let tu=Math.max(0,U.findIndex(u=>u.city===CONFIG.defaultUnit));
+const teamHTML=()=>{const u=U[tu],m=TM.filter(t=>t.unit===u.city||!U.some(x=>x.city===t.unit));return (demo?notice:"")+`<div class="thead"><small>${esc(addr(u).split(" — ")[0])} · ${esc(u.hours)}</small></div>`+(m.length?`<div class="tgrid">${m.map(card).join("")}</div>`:`<div class="empty">Em breve apresentaremos os profissionais desta unidade.</div>`)};
+if(TM.length){$("#teamTabs").innerHTML=U.map((u,i)=>`<button type="button" class="tab" aria-pressed="${i===tu}" data-i="${i}">${esc(u.city)}</button>`).join("");$("#team").innerHTML=teamHTML();
+$("#teamTabs").addEventListener("click",e=>{const b=e.target.closest(".tab");if(!b)return;tu=+b.dataset.i;$("#teamTabs").querySelectorAll(".tab").forEach((x,i)=>x.setAttribute("aria-pressed",i===tu));$("#team").innerHTML=teamHTML()})}
+else{$("#teamTabs").hidden=true;$("#team").innerHTML='<div class="empty">Em breve vamos apresentar aqui os barbeiros da O Barbeirin, com foto e especialidade de cada um.</div>'}
+$("#team").addEventListener("pointermove",e=>{const p=e.target.closest(".pph");if(!p)return;const r=p.getBoundingClientRect();p.style.setProperty("--mx",(e.clientX-r.left)+"px");p.style.setProperty("--my",(e.clientY-r.top)+"px")});
+const R=CONFIG.reviews,gl=CONFIG.reviewsUrl?` <a href="${esc(CONFIG.reviewsUrl)}" target="_blank" rel="noopener noreferrer">Ver no Google</a>`:"";
+$("#reviews").innerHTML=R.length?`<div class="cards">${R.map(r=>`<figure class="card rev"><div class="stars" role="img" aria-label="Nota ${r.stars} de 5">${"★".repeat(r.stars)+"☆".repeat(5-r.stars)}</div><blockquote>${esc(r.text)}</blockquote><figcaption>${esc(r.name)} · <span class="muted">Avaliação no Google</span></figcaption></figure>`).join("")}</div><p style="margin-top:1.5rem">${gl.trim()}</p>`:`<div class="empty">As avaliações do Google serão exibidas aqui assim que forem adicionadas.${gl}</div>`;
+const fx={"{unidades}":U.map(u=>`${u.city} — ${[u.street,u.district].filter(Boolean).join(", ")}, das ${u.hours}`).join(" · "),"{categorias}":CONFIG.categories.map(c=>c.name.toLowerCase()).join(", "),"{planos}":CONFIG.plans.map(p=>`${p.name} (${brl(p.price)}/mês)`).join("; "),"{instagrams}":CONFIG.social.filter(x=>x.type==="instagram").map(x=>`${x.short}: @${x.url.split("/").filter(Boolean).pop()}`).join(" · ")};
+const fh=CONFIG.faq.map(f=>`<details><summary>${esc(f.q)}</summary><p>${esc(Object.keys(fx).reduce((a,k)=>a.split(k).join(fx[k]),f.a))}</p></details>`),hf=Math.ceil(fh.length/2);
+$("#faq").innerHTML=`<div class="fcol">${fh.slice(0,hf).join("")}</div><div class="fcol">${fh.slice(hf).join("")}</div>`;
+const B=CONFIG.booking,pad=n=>String(n).padStart(2,"0"),hm=m=>`${pad(Math.floor(m/60))}:${pad(m%60)}`,slug=x=>x.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""),iso=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`,proId=(u,p)=>slug(u.city)+"-"+slug(p.name);
+const rnd=sd=>{let h=2166136261;for(const c of sd)h=Math.imul(h^c.charCodeAt(0),16777619);return()=>((h=Math.imul(h^h>>>15,2246822507)^Math.imul(h^h>>>13,3266489909))>>>0)/4294967296};
+const demoDB=[],demoBusy=async(u,p,d)=>{const x=U.find(y=>y.city===u),r=rnd(p+d),o=[];for(let i=0;i<4;i++){const s=x.open+30*Math.floor(r()*((x.close-x.open)/30-3));o.push([s,s+30*(1+Math.floor(r()*3))])}return o.concat(demoDB.filter(z=>z.p===p&&z.d===d).map(z=>[z.s,z.e]))};
+const api=async(fn,b)=>{const r=await fetch(`${B.url}/rest/v1/rpc/${fn}`,{method:"POST",headers:{"Content-Type":"application/json",apikey:B.key,Authorization:`Bearer ${B.key}`},body:JSON.stringify(b)});const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.message||"Falha ao falar com o servidor");return j};
+const getBusy=B.mode==="api"?async(u,p,d)=>(await api("get_busy",{p_unit:slug(u),p_pro:p,p_date:d})).map(x=>[x.start_min,x.end_min]):demoBusy;
+const doBook=B.mode==="api"?o=>api("create_appointment",{p_unit:slug(o.u),p_pro:o.p,p_service:o.svc,p_date:o.d,p_start:o.s,p_end:o.e,p_name:o.n,p_phone:o.w}):async o=>{demoDB.push(o)};
+const bk={u:0,s:0,p:null,d:iso(new Date()),t:null},bd=$("#book"),SV=CONFIG.categories.flatMap(c=>c.items.map(i=>({...i,cat:c.name}))),CAT=CONFIG.categories.map(c=>c.name),MO=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],WD=["dom","seg","ter","qua","qui","sex","sáb"],brlx=n=>n==null?"Consultar":brl(n),av=t=>t&&t.photo?`<img src="${esc(t.photo)}" alt="" width="64" height="64">`:poleI,msg=t=>`<p class="muted" style="margin:0">${t}</p>`;
+const pros=()=>{const all=CONFIG.team.filter(t=>t.unit===U[bk.u].city),m=SV[bk.s].cat==="Unhas e Spa",f=all.filter(t=>(t.role==="Manicure")===m);return f.length?f:all};
+const rS=()=>{const u=U[bk.u],sv=SV[bk.s],dt=new Date(bk.d+"T00:00");$("#bkSum").innerHTML=`<div class="sum-pro"><span class="av lg">${av(bk.p)}</span><div><b>${bk.p?esc(bk.p.name):"Profissional"}</b><small>${esc(u.city)}</small></div></div><dl class="sum-l"><div><dt>Serviço</dt><dd>${esc(sv.name)} · ${sv.duration} min</dd></div><div><dt>Data</dt><dd>${WD[dt.getDay()]}, ${pad(dt.getDate())}/${pad(dt.getMonth()+1)}</dd></div><div><dt>Horário</dt><dd>${bk.t!=null?hm(bk.t)+" – "+hm(bk.t+sv.duration):"Escolha um horário"}</dd></div><div><dt>Valor</dt><dd>${esc(brlx(sv.price))}</dd></div></dl>`};
+const rU=()=>{$("#bkU").innerHTML=U.map((u,i)=>`<button type="button" class="opt" aria-pressed="${i===bk.u}" data-i="${i}">${esc(u.city)}</button>`).join("")};
+$("#bkU").onclick=e=>{const b=e.target.closest(".opt");if(b){bk.u=+b.dataset.i;rU();rP()}};
+const rC=()=>{$("#bkC").innerHTML=CAT.map((c,i)=>`<button type="button" class="opt" aria-pressed="${c===SV[bk.s].cat}" data-i="${i}">${esc(c)}</button>`).join("")};
+$("#bkC").onclick=e=>{const b=e.target.closest(".opt");if(b){bk.s=SV.findIndex(x=>x.cat===CAT[+b.dataset.i]);rC();rV();rP()}};
+const rV=()=>{$("#bkS").innerHTML=SV.map((x,i)=>({x,i})).filter(o=>o.x.cat===SV[bk.s].cat).map(o=>`<button type="button" class="svc-r" aria-pressed="${o.i===bk.s}" data-i="${o.i}"><span>${esc(o.x.name)}<small>${o.x.duration} min</small></span><b>${esc(brlx(o.x.price))}</b></button>`).join("")};
+$("#bkS").onclick=e=>{const b=e.target.closest(".svc-r");if(b){bk.s=+b.dataset.i;rV();rP()}};
+let PL=[];$("#bkP").onclick=e=>{const b=e.target.closest(".pro-c");if(b){bk.p=PL[+b.dataset.i];rP()}};
+const rP=()=>{PL=pros();if(!PL.includes(bk.p))bk.p=PL[0]||null;$("#bkP").innerHTML=PL.length?PL.map((t,i)=>`<button type="button" class="pro-c" aria-pressed="${t===bk.p}" data-i="${i}"><span class="av">${av(t)}</span><b>${esc(t.name)}</b>${t.role?`<small>${esc(t.role)}</small>`:""}</button>`).join(""):msg("Sem profissionais cadastrados nesta unidade.");rL()};
+const rD=()=>{const n=new Date();$("#bkD").innerHTML=Array.from({length:14},(_,i)=>new Date(n.getFullYear(),n.getMonth(),n.getDate()+i)).map((d,i)=>`<button type="button" class="day" aria-pressed="${iso(d)===bk.d}" data-d="${iso(d)}"><small>${i?WD[d.getDay()]:"hoje"}</small><b>${pad(d.getDate())}</b><small>${MO[d.getMonth()]}</small></button>`).join("")};
+$("#bkD").onclick=e=>{const b=e.target.closest(".day");if(b){bk.d=b.dataset.d;rD();rL()}};
+const per=[["Manhã",0,720],["Tarde",720,1080],["Noite",1080,1440]];
+const rL=async()=>{const L=$("#bkL");bk.t=null;rS();$("#bkCnt").textContent="";if(!bk.p||!bk.d){L.innerHTML=msg("Escolha o profissional e o dia.");return}
+const u=U[bk.u],dur=SV[bk.s].duration,k=bk.p.name+bk.d+bk.u+bk.s;bk.k=k;L.innerHTML=msg("Carregando horários...");let busy;
+try{busy=await getBusy(u.city,proId(u,bk.p),bk.d)}catch(e){L.innerHTML=msg("Não foi possível carregar os horários agora. Agende pelo WhatsApp.");return}
+if(bk.k!==k)return;const now=new Date(),td=iso(now)===bk.d,nm=now.getHours()*60+now.getMinutes(),all=[];
+for(let t=u.open;t+dur<=u.close;t+=30)all.push({t,f:!(td&&t<=nm)&&!busy.some(([a,b])=>t<b&&t+dur>a)});
+$("#bkCnt").textContent=`${all.filter(x=>x.f).length} horários livres`;
+L.innerHTML=per.map(([n,a,b])=>{const g=all.filter(x=>x.t>=a&&x.t<b);return g.length?`<h5>${n}</h5><div class="slots">${g.map(x=>`<button type="button" class="slot" data-t="${x.t}" aria-pressed="false" ${x.f?"":`disabled aria-label="${hm(x.t)} ocupado"`}>${hm(x.t)}</button>`).join("")}</div>`:""}).join("")||msg("Sem horários neste dia para este serviço.")};
+$("#bkL").onclick=e=>{const b=e.target.closest(".slot");if(!b||b.disabled)return;bk.t=+b.dataset.t;$("#bkL").querySelectorAll(".slot").forEach(x=>x.setAttribute("aria-pressed",x===b));rS()};
+const openBook=(l,mode,unit)=>{bk.s=Math.max(0,SV.findIndex(x=>x.name===l));bk.p=null;bk.d=iso(new Date());bk.t=null;
+if(unit)bk.u=Math.max(0,U.findIndex(x=>x.city===unit));
+if(mode==="pro"){bk.s=0;bk.p=CONFIG.team.find(t=>t.name===l&&(!unit||t.unit===unit))||null}
+$("#bkDemo").hidden=B.mode==="api";$("#bkM").textContent="";$("#bkOk").disabled=false;$("#bkForm").hidden=false;$("#bkDone").hidden=true;rU();rC();rV();rP();rD();rS();shM(bd)};
+$("#bkX").onclick=()=>clM(bd);
+$("#bkForm").onsubmit=async e=>{e.preventDefault();const m=$("#bkM"),n=$("#bkN").value.trim(),w=dg($("#bkW").value),u=U[bk.u],sv=SV[bk.s];
+if(!bk.p||bk.t==null){m.textContent="Escolha profissional, dia e horário.";return}
+if(n.length<2||w.length<10){m.textContent="Informe seu nome e WhatsApp com DDD.";return}
+$("#bkOk").disabled=true;m.textContent="Enviando...";
+try{await doBook({u:u.city,p:proId(u,bk.p),svc:sv.name,d:bk.d,s:bk.t,e:bk.t+sv.duration,n,w});
+const dd=new Date(bk.d+"T00:00"),dt=`${WD[dd.getDay()]}, ${pad(dd.getDate())}/${pad(dd.getMonth()+1)}`,wl=wa("",u).split("?")[0]+"?text="+encodeURIComponent(`Olá! Agendei pelo site: ${sv.name} com ${bk.p.name}, ${dt} às ${hm(bk.t)}. Nome: ${n}.`);
+$("#bkForm").hidden=true;$("#bkDone").hidden=false;$("#bkDone").innerHTML=`<div class="done"><svg class="ok" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7 12.5l3 3 7-7"/></svg><h3>${B.mode==="api"?"Agendamento registrado":"Demonstração concluída"}</h3><div class="sum-pro"><span class="av lg">${av(bk.p)}</span><div style="text-align:left"><b>${esc(bk.p.name)}</b><small>${esc(sv.name)}</small></div></div><p class="lead" style="margin:0">${dt} às ${hm(bk.t)}<br>${esc(u.city)}</p>${B.mode==="api"?"":'<p class="demo-b" style="padding:.6rem .8rem">Nada foi reservado de verdade. Para marcar um horário real, use o WhatsApp.</p>'}<a class="btn" target="_blank" rel="noopener noreferrer" href="${wl}">Avisar no WhatsApp</a><button type="button" class="btn ghost" id="bkEnd">Fechar</button></div>`;$("#bkEnd").onclick=()=>clM(bd)}
+catch(err){m.textContent=err.message||"Não foi possível agendar. Tente pelo WhatsApp.";$("#bkOk").disabled=false}};
+const igx=u=>CONFIG.social.find(x=>x.city===u.city&&x.type==="instagram"),ig=u=>igx(u)?`<a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="${esc(igx(u).url)}" aria-label="${esc(igx(u).label)}">Instagram</a>`:"",igt=u=>igx(u)?`<br><a href="${esc(igx(u).url)}" target="_blank" rel="noopener noreferrer">Instagram</a>`:"";
+$("#units").innerHTML=U.map(u=>`<article class="unit"><h3>${esc(u.city)} — ${u.state}</h3><dl><dt>Endereço</dt><dd>${esc(addr(u))}</dd><dt>Horário</dt><dd>${esc(u.hours)}</dd><dt>WhatsApp</dt><dd>${esc(fmtP(u.phone))}</dd></dl><div class="btns"><a class="btn sm" target="_blank" rel="noopener noreferrer" href="${wa("",u)}" aria-label="Chamar no WhatsApp da unidade ${esc(u.city)}">WhatsApp</a><a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(addr(u))}" aria-label="Abrir ${esc(u.city)} no Google Maps">Google Maps</a>${ig(u)}</div></article>`).join("");
+$("#fUnits").innerHTML=U.map(u=>`<li><strong style="color:var(--fg)">${esc(u.city)} — ${u.state}</strong><br>${esc(addr(u).split(" — ")[0])}<br>${esc(u.hours)}<br><a href="${wa("",u)}" target="_blank" rel="noopener noreferrer">${esc(fmtP(u.phone))}</a></li>`).join("");
+const ICO={whatsapp:'<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9 9.5c.4 2.2 2.3 4.2 5 5l1.2-1.2-1.8-.9-.9.7c-.7-.3-1.4-1-1.7-1.7l.7-.9-.9-1.8z"/>',instagram:'<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/>',facebook:'<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',youtube:'<path d="M2.5 17a24.1 24.1 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.6 49.6 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.1 24.1 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.6 49.6 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/>',tiktok:'<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',link:'<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>'},svg=k=>`<svg viewBox="0 0 24 24" aria-hidden="true">${ICO[k]||ICO.link}</svg>`;
+$("#fSocial").innerHTML=`<div class="soc"><a data-wa href="#contato" aria-label="WhatsApp" title="WhatsApp">${svg("whatsapp")}</a>${CONFIG.social.filter(x=>x.url&&x.type!=="instagram").map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(x.label)}" title="${esc(x.label)}"${x.short?' class="lbl"':""}>${svg(x.type)}${x.short?`<span>${esc(x.short)}</span>`:""}</a>`).join("")}</div>`;
+if(CONFIG.logoSrc)$("#fLogo").src=CONFIG.logoSrc;
+{const j=document.createElement("script");j.type="application/ld+json";
+j.textContent=JSON.stringify(U.map(u=>({"@context":"https://schema.org","@type":"BarberShop",name:`${CONFIG.name} — ${u.city}`,telephone:"+"+dg(u.phone),address:{"@type":"PostalAddress",streetAddress:[u.street,u.district].filter(Boolean).join(", "),addressLocality:u.city,addressRegion:u.state,addressCountry:"BR"}})));document.head.append(j)}
+/* menu */
+const mn=$("#menu"),bg=$("#burger"),setM=o=>{mn.classList.toggle("open",o);bg.setAttribute("aria-expanded",o);bg.setAttribute("aria-label",o?"Fechar menu":"Abrir menu");bg.textContent=o?"✕":"☰";document.body.style.overflow=o?"hidden":""};
+bg.onclick=()=>setM(!mn.classList.contains("open"));
+mn.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>setM(false)));
+addEventListener("keydown",e=>{if(e.key==="Escape"&&mn.classList.contains("open")){setM(false);bg.focus()}});
+const hd=$("#top"),pr=$("#prog"),sc=()=>{hd.classList.toggle("solid",scrollY>40);const m=document.documentElement.scrollHeight-innerHeight;pr.style.transform=`scaleX(${m>0?Math.min(scrollY/m,1):0})`};sc();addEventListener("scroll",sc,{passive:true});
+/* vídeo do hero: respeita movimento reduzido e economia de dados; pausa fora da tela */
+const hv=$("#heroVideo");
+if(hv&&!matchMedia("(prefers-reduced-motion:reduce)").matches&&!(navigator.connection&&navigator.connection.saveData)){
+ hv.muted=true;hv.src=HERO_VIDEO;hv.play().catch(()=>{});
+ if("IntersectionObserver" in window)new IntersectionObserver(e=>{e[0].isIntersecting?hv.play().catch(()=>{}):hv.pause()}).observe(hv)}
+[".list",".plans",".units",".cards",".grid",".bar ul",".team",".faq"].forEach(q=>document.querySelectorAll(q).forEach(el=>{el.classList.add("st");[...el.children].forEach((c,i)=>c.style.setProperty("--i",i))}));
+/* reveal */
+if("IntersectionObserver" in window&&!matchMedia("(prefers-reduced-motion:reduce)").matches){
+ document.documentElement.classList.add("js");
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+ document.querySelectorAll(".rv,.st").forEach(el=>io.observe(el))}
+</script>
+</body>
+</html>
